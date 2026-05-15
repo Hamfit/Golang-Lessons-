@@ -2,9 +2,9 @@ package iteration
 
 import "strings"
 
-func Repeat(character string) string {
+func Repeat(character string, n int) string {
 	var repeated strings.Builder
-	for range 5 {
+	for range n {
 		repeated.WriteString(character)
 	}
 	return repeated.String()
